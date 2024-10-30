@@ -16,7 +16,7 @@
 
 ### How-To insert a new Access Node Participant in the Trusted Access Nodes List
 
-The directory of the Access Node contains the public data of the organizations that are part of the DOME network. 
+The directory of the Access Node contains the public data of the organizations that are part of the DOME network. If you need more information about how you can get or create your data, please, follow the [Access Node Guide](https://github.com/DOME-Marketplace/access-node/blob/main/README.md) 
 The data is stored in a YAML file that contains the following information:
 ```yaml
 organizations:
