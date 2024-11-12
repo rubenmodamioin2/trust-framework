@@ -2,7 +2,10 @@ clients:
   - clientId: "did:key:zDnaeypyWjzn54GuUP7PmDXiiggCyiG7ksMF7Unm7kjtEKBez"
     url: "https://dome-marketplace-sbx.org"
     redirectUris: [ "https://dome-marketplace-sbx.org/auth/vc/callback" ]
-    scopes: [ "openid_learcredential" ]
+    scopes:
+      - "learcredential"
+      - "profile"
+      - "email"
     clientAuthenticationMethods: [ "client_secret_jwt" ]
     authorizationGrantTypes: [ "authorization_code" ]
     postLogoutRedirectUris: [ "https://dome-marketplace-sbx.org/" ]
@@ -13,7 +16,10 @@ clients:
   - clientId: "did:key:zDnaezLhSFWRZ1zrYQRwLxV8nDWmb2REHoUf7N3qvna1TFina"
     url: "https://issuer.dome-marketplace-sbx.org"
     redirectUris: []
-    scopes: []
+    scopes:
+      - "learcredential"
+      - "profile"
+      - "email"
     clientAuthenticationMethods: ["client_secret_jwt"]
     authorizationGrantTypes: ["client_credentials"]
     postLogoutRedirectUris: []
