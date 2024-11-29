@@ -2,10 +2,7 @@ clients:
   - clientId: "did:key:zDnaeypyWjzn54GuUP7PmDXiiggCyiG7ksMF7Unm7kjtEKBez"
     url: "https://dome-marketplace-sbx.org"
     redirectUris: [ "https://dome-marketplace-sbx.org/auth/vc/callback" ]
-    scopes:
-      - "learcredential"
-      - "profile"
-      - "email"
+    scopes: ["learcredential", "profile", "email", "openid"]
     clientAuthenticationMethods: [ "client_secret_jwt" ]
     authorizationGrantTypes: [ "authorization_code" ]
     postLogoutRedirectUris: [ "https://dome-marketplace-sbx.org/" ]
@@ -16,10 +13,7 @@ clients:
   - clientId: "did:key:zDnaezLhSFWRZ1zrYQRwLxV8nDWmb2REHoUf7N3qvna1TFina"
     url: "https://issuer.dome-marketplace-sbx.org"
     redirectUris: []
-    scopes:
-      - "learcredential"
-      - "profile"
-      - "email"
+    scopes: ["learcredential", "profile", "email", "openid"]
     clientAuthenticationMethods: ["client_secret_jwt"]
     authorizationGrantTypes: ["client_credentials"]
     postLogoutRedirectUris: []
@@ -29,15 +23,12 @@ clients:
     tokenEndpointAuthenticationSigningAlgorithm: "ES256"
   - clientId: "did:key:zDnaeUcW7pAV2xfcEMRsi3tsgYSYkLEf8mbSCZ7YFhKDu6XcR"
     id: "1234"
-    domain: "http://localhost:8081"
-    redirectUris: [ "http://localhost:8081/cb" ]
-    scopes:
-      - "learcredential"
-      - "profile"
-      - "email"
+    domain: "http://localhost:63342"
+    redirectUris: [ "http://localhost:63342/cb" ]
+    scopes: ["learcredential", "profile", "email", "openid"]
     clientAuthenticationMethods: [ "client_secret_jwt" ]
     authorizationGrantTypes: [ "authorization_code" ]
-    postLogoutRedirectUris: [ "http://localhost:8081/cb" ]
+    postLogoutRedirectUris: [ "http://localhost:63342" ]
     requireAuthorizationConsent: false
     requireProofKey: false
     jwkSetUrl: "https://verifier.dome-marketplace-lcl.org/oidc/did/did:key:zDnaeUcW7pAV2xfcEMRsi3tsgYSYkLEf8mbSCZ7YFhKDu6XcR"
