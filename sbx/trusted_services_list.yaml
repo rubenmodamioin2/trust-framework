@@ -23,7 +23,7 @@ clients:
     tokenEndpointAuthenticationSigningAlgorithm: "ES256"
   - clientId: "did:key:zDnaeUcW7pAV2xfcEMRsi3tsgYSYkLEf8mbSCZ7YFhKDu6XcR"
     id: "1234"
-    domain: "http://localhost:63342"
+    url: "http://localhost:63342"
     redirectUris: [ "http://localhost:63342/cb" ]
     scopes: ["learcredential", "profile", "email", "openid"]
     clientAuthenticationMethods: [ "client_secret_jwt" ]
